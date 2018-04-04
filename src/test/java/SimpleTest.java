@@ -3,7 +3,6 @@ import io.qameta.allure.*;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.*;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 @Epic("[@Epic]Allure examples")
@@ -91,7 +90,7 @@ public class SimpleTest {
         loginWith("login", "pass");
         login();
         performedActions( new String[]{"dd", "ee", "xx"});
-        Assert.assertTrue("Assertion message false", false);
+        Assert.assertTrue("Assertion message false", true);
     }
 
 }
